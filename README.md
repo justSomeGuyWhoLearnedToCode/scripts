@@ -1,3 +1,5 @@
 # scripts
 
-An untested script 
+An untested script that's a rewrite of a recent favor for a friend.
+
+
