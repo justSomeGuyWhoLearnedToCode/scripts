@@ -1,12 +1,12 @@
 #!bin/bash
 
 declare -a emails
-declare -a clients
+declare -a client
 declare -a agents
 declare -a phone
-declare -a rentals
-declare -a date1
-declare -s date2
+declare -a rental
+declare -a day1
+declare -s day2
 
 $client=( $(awk '{print $1}' ./Documents/data.txt)
 
@@ -16,7 +16,7 @@ $rental=( $(awk '{print $3}' ./Documents/data.txt)
 
 $agent=( $(awk '{print $4}' ./Documents/data.txt)
 
-$phone_number=( $(awk '{print $5}' ./Documents/data.txt)
+$phone=( $(awk '{print $5}' ./Documents/data.txt)
 
 $day1=( $(awk '{print $6}' ./Documents/data.txt)
 
@@ -35,10 +35,9 @@ $message = "Dear ${client[$t]},\n
 \tWith great respect and appreciation, your friend,\n
 \t\t\t\t ${agent[$t]}"
 
+mail -s $message ${emails[$t]}
+
 t = $t + 1
-
-mail -s $message ${emails[$t]} 
-
 } # while
 
 #eof	
