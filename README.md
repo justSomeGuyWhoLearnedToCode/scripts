@@ -1,5 +1,5 @@
 # scripts
 
-An untested script that's a rewrite of a recent favor for a friend.
+A (purposefully) untested script that sends mail to a list of clients to schedule a meeting to view a property.
 
 
