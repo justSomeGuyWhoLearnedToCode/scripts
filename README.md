@@ -1,5 +1,5 @@
-# scripts
+# script
 
-A (purposefully) untested script that sends mail to a list of clients to schedule a meeting to view a property.
+Untested script example for the good folks at the UAW. 
 
 
